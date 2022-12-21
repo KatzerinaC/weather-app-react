@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 
 
 export default function Weather(props) {
    const [weatherData, setWeatherData] = useState({ready:false});
   function handleResponse(response){
-    console.log(response.data);
+   
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -13,7 +14,7 @@ export default function Weather(props) {
       city: response.data.city,
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      date: response.data.time * 1000,
+      date: new Date(response.data.time * 1000),
       imgUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
     });
     
@@ -44,9 +45,11 @@ if(weatherData.ready){
       <h1>{weatherData.city}</h1>
       <br />
       <ul>
-        <li>Last updated:{weatherData.date}</li>
+        <li>
+          <FormattedDate date={weatherData.date}/>
+        </li>
         <li className="text-capitalize">{weatherData.description}</li>
-      </ul>
+      </ul> 
       <div className="row">
         <div className="col-7">
           <div className="d-flex weather-temperature">
