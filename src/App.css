@@ -46,10 +46,11 @@ ul ::first-letter {
   text-transform: capitalize;
 }
 
-.weather-temperature img {
-  margin-right: 1px;
-  height: 64px;
-  width: 64px;
+.weather canvas {
+  margin-right: 10px;
+  margin-top: 5px;
+  display: inline-block;
+ 
 }
 
 .weather-temperature strong {
