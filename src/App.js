@@ -6,11 +6,11 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Berlin"/>
+        <Weather defaultCity="Berlin" />
       </div>
       <footer>
         <a
-          href="https://github.com/KatzerinaC/weather-react"
+          href="https://github.com/KatzerinaC/weather-app-react"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -18,7 +18,7 @@ export default function App() {
         </a>{" "}
         and{" "}
         <a
-          href="https://fabulous-torrone-617c89.netlify.app/"
+          href="https://sensational-baklava-8a1a19.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
