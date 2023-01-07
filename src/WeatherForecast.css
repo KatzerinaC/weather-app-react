@@ -1,5 +1,6 @@
 .WeatherForecast{
   text-align: center;
+  color: #1b1b4f;
 }
 .WeatherForecast-temperature-min{
 opacity: 0.6;

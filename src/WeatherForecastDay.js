@@ -19,27 +19,21 @@ function maxTemperature() {
 
     return days[day];
   }
-  return(
+  return (
     <div>
-   <div className="WeatherForecast-day">{day()}</div>
-            <div className="d-flex justify-content-center align-items-center ">
-        <img
-          src={props.forecastDay.condition.icon_url}
-          alt={props.forecastDay.condition.description}
-          className="forecast-icon"
-          width="90"
-          height="90"
-        />
+      <div className="WeatherForecast-day">{day()}</div>
+      <div className="d-flex justify-content-center align-items-center ">
+       <WeatherIcon code={props.forecastDay.condition.icon} size={36} />
       </div>
-            <div className="WeatherForecast-temperatures">
-              <span className="WeatherForecast-temperature-max">
-                 {maxTemperature()}
-              </span>
-              <span className="WeatherForecast-temperature-min">
-             {minTemperature()}
-              </span>
-            </div>
-       </div>     
+      <div className="WeatherForecast-temperatures">
+        <span className="WeatherForecast-temperature-max">
+          {maxTemperature()}
+        </span>
+        <span className="WeatherForecast-temperature-min">
+          {minTemperature()}
+        </span>
+      </div>
+    </div>
   );
 }
 
