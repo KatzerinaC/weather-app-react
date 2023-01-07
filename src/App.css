@@ -1,80 +1,4 @@
-.form-control {
-  background: #f9f7fe;
-  border: none;
-  border-radius: 6px;
-  color: rgb(210 49 173 / 40%);
-  display: inline-block;
-  font-size: 16px;
-  height: 50px;
-  line-height: 20px;
-  padding: 15px 20px;
-}
 
-.btn-primary {
-  background: #f132a8;
-  color: white;
-  font-size: 16px;
-  padding: 15px 0;
-  border: none;
-  height: 50px;
-}
-
-.weather form {
-  text-align: right;
-}
-
-h1 {
-  font-family: "Lato", sans-serif;
-  color: black;
-  font-size: 55px;
-  font-weight: 400;
-
-  line-height: 28px;
-  text-align: left;
-}
-li {
-  list-style: none;
-}
-ul {
-  font-family: "Lato", sans-serif;
-  color: #584b4f;
-  font-size: 22px;
-  font-weight: 100;
-  text-align: right;
-}
-ul ::first-letter {
-  text-transform: capitalize;
-}
-
-.weather canvas {
-  margin-right: 10px;
-  margin-top: 5px;
-  display: inline-block;
- 
-}
-
-.weather .unit{
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-size: 90px;
-  font-weight: 400;
-  line-height: 1;
-  position: relative;
-  top: -34px;
-}
-
-.weather-temperature span {
-  position: relative;
-  font-size: 18px;
-  color: black;
-  font-weight: bold;
-  top: -26px;
-}
-h3 {
-  font-size: 13px;
-  color: #672f9b;
-  font-family: "Reem Kufi Fun", sans-serif;
-}
 
 
 .App footer {
@@ -91,6 +15,7 @@ h3 {
   max-width: 600px ;
   margin: 20px auto;
   padding: 30px;
-  border: 1px solid #6d3956;
-  border-radius: 5px;
+  border: 2px;
+  border-radius: 20px;
+  background: linear-gradient(109.6deg, rgb(221, 110, 152) 11.2%, rgb(254, 148, 136) 100.2%);
 }
